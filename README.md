@@ -3,7 +3,8 @@ Implementation of basic data structures in C
 
 ## Content: 
 
-- Linked List
+- [Linked List](https://github.com/jcontrerasroberto/data-structures-in-C/tree/master/Linked%20list)
+- [Stacks](https://github.com/jcontrerasroberto/data-structures-in-C/tree/master/Stacks)
 
 
 

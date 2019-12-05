@@ -11,3 +11,7 @@ typedef int Elem; //We name Elem (of Element) the type we use, can be char, floa
 void printElem(Elem e){
   printf("%d\n", e);
 }
+
+bool isEquals(Elem e1, Elem e2){
+  return e1==e2;
+}

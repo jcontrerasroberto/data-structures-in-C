@@ -1,5 +1,5 @@
-#include "Elem.h"
 #include <stdbool.h>
+#include "Elem.h"
 #include <stdlib.h>
 //Functions for Linked list
 //We create a new struct that will be any node and a pointer to the node
@@ -47,4 +47,10 @@ void printList(List l){
 int sizeofList(List l){
   if(isEmpty(l)) return 0;
     else return 1 + sizeofList(removeHead(l));
+}
+
+bool isElem(Elem e, List l){
+  if(isEmpty(l)) return false;
+  if(isEquals(getHeadData(l),e)) return true;
+  else return isElem(e, removeHead(l));
 }

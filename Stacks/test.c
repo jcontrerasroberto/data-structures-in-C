@@ -10,5 +10,7 @@ int main(){
   printf("-------\n");
   myStack = pop(myStack);
   printStack(myStack);
+  printf("Checking if a element is in the list------\n");
+  printf("%d\n", isElemIntoList(10,myStack));
   return 0;
 }

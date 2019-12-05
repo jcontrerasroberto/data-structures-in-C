@@ -41,3 +41,9 @@ void printStack(Stack s){
     printStack(pop(s));
   }
 }
+
+bool isElemIntoList(Elem e, Stack s){
+  if(isEmpty(s)) return false;
+  if(isEquals(top(s),e)) return true;
+  else return isElemIntoList(e, pop(s));
+}

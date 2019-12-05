@@ -14,5 +14,7 @@ int main(){
   myList = removeHead(myList);
   printf("Printing list without the head------\n");
   printList(myList);
+  printf("Checking if a element is in the list------\n");
+  printf("%d\n", isElemIntoList(3,myList));
   return 0;
 }

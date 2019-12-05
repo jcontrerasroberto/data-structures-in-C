@@ -49,8 +49,8 @@ int sizeofList(List l){
     else return 1 + sizeofList(removeHead(l));
 }
 
-bool isElem(Elem e, List l){
+bool isElemIntoList(Elem e, List l){
   if(isEmpty(l)) return false;
   if(isEquals(getHeadData(l),e)) return true;
-  else return isElem(e, removeHead(l));
+  else return isElemIntoList(e, removeHead(l));
 }

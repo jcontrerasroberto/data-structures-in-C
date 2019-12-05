@@ -39,8 +39,8 @@ List removeHead(List l){
 
 void printList(List l){
   if(!isEmpty(l)){
-    PrintElem(getHeadData(l));
-    PrintList(removeHead(l));
+    printElem(getHeadData(l));
+    printList(removeHead(l));
   }
 }
 
